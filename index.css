@@ -27,11 +27,14 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 600;
     font-size: 32px;
-    color: #26387d;
+}
+
+.header-l-i2 > a {
+    color: #222;
 }
 
 .header-r {
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 2;
@@ -46,11 +49,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     flex: 1;
-    color: #334155;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .header-r-l-i > a{
+    color: #334155;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -85,4 +88,27 @@ a {
 .sign_up {
     background-color: #5072e9;
     color: white;
+}
+
+@media (min-width: 922px) {
+    .header-r {
+        display: flex;
+    }
+    .header-l-i2 > a{
+        color: #26387d;
+    }
+    .ham-menu {
+        display: none;
+    }
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.ham-menu {
+    padding: 10.95px;
+    background: transparent;
+    border: 0px;
 }
