@@ -1,0 +1,32 @@
+/*header {
+            display: flex;
+        }
+        div {
+            display: flex;
+            margin: 8px;
+        }
+        #logo {
+            width: 55px;
+            height: 57px;
+        }
+        #title {
+            margin-left: 10px;
+            align-content: center;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        @media (min-width: 922px) {
+            #title {
+                color: #26387d;
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 921px) {
+            #title {
+                color: #222;
+                font-size: 1.625rem;
+            }
+        }*/

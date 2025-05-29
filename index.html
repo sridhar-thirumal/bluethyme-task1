@@ -4,50 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bluethyme</title>
-    <style>
-        header {
-            display: flex;
-        }
-        div {
-            display: flex;
-            margin: 8px;
-        }
-        #logo {
-            width: 55px;
-            height: 57px;
-        }
-        #title {
-            margin-left: 10px;
-            align-content: center;
-            text-decoration: none;
-            font-family: sans-serif;
-            font-weight: 600;
-        }
-
-        @media (min-width: 922px) {
-            #title {
-                color: #26387d;
-                font-size: 32px;
-            }
-        }
-
-        @media (max-width: 921px) {
-            #title {
-                color: #222;
-                font-size: 1.625rem;
-            }
-        }
-    </style>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div>
-            <a href="#" id="logo"><img src="assets/logo.png"></a>
+    <header class="header-container">
+        <div class="header-l">
+            <div class="header-l-i1">
+                <a href="#" id="logo"><img src="assets/logo.png"></a>
+            </div>
+            <div class="header-l-i2">
+                <a href="#" id="title">Bluethyme</a>
+            </div>
         </div>
-        <div>
-            <a href="#" id="title">Bluethyme</a>
+        <div class="header-r">
+            <div class="header-r-l">
+                <div class="header-r-l-i1">
+                    <a href="#">Home</a>
+                </div>
+                <div class="header-r-l-i2">
+                    <a href="#">About us</a>
+                </div>
+                <div class="header-r-l-i3">
+                    <a href="#">Resources</a>
+                </div>
+            </div>
+            <div class="heeader-r-r">
+                <div class="header-r-r-i1">
+                    <button>Sign In</button>
+                </div>
+                <div class="header-r-r-i2">
+                    <button>Sign Up</button>
+                </div>
+            </div>
         </div>
-        <div></div>
     </header>
 </body>
 </html>
