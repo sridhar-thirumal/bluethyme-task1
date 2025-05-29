@@ -17,16 +17,25 @@
             height: 57px;
         }
         #title {
-            color: #26387d;
-            font-size: 32px;
             margin-left: 10px;
             align-content: center;
             text-decoration: none;
             font-family: sans-serif;
-            /*for screens with width less than 922px
-            color: #222;
-            font-size: 1.625rem;*/
             font-weight: 600;
+        }
+
+        @media (min-width: 922px) {
+            #title {
+                color: #26387d;
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 921px) {
+            #title {
+                color: #222;
+                font-size: 1.625rem;
+            }
         }
     </style>
 </head>
@@ -34,6 +43,8 @@
     <header>
         <div>
             <a href="#" id="logo"><img src="assets/logo.png"></a>
+        </div>
+        <div>
             <a href="#" id="title">Bluethyme</a>
         </div>
         <div></div>
