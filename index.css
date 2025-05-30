@@ -100,12 +100,6 @@ a {
     .menu {
         display: none;
     }
-    .ham-menu {
-        display: none;
-    }
-    .close-menu {
-        display: none;
-    }
 }
 
 svg {
@@ -119,13 +113,13 @@ svg {
     border: 0px;
 }
 
+ul {
+    list-style:none;
+    display:none;
+    flex-direction:column;
+}
+
 li > a {
     font-family: 'Plus Jakarta Sans', sans-serif;
     line-height: 1.2;
-    width: 100%;
-}
-
-li > a:hover {
-    background-color:cyan;
-    color: #5072e9;
 }
