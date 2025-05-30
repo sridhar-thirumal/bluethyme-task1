@@ -1,0 +1,135 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-l {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    gap: 5px;
+}
+
+.header-l-i2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.header-l-i2 > a {
+    text-decoration: none;
+    color: #222;
+}
+
+.header-r {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 2;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.header-r-l {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.header-r-l-i > a{
+    text-decoration: none;
+    color: #334155;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header-r-r {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 5px;
+}
+
+
+.sign-in, .sign-up {
+    border: 2px solid #5072e9;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-style: normal;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.sign-in {
+    background-color: white;
+    color: #5072e9;
+}
+
+.sign-up {
+    background-color: #5072e9;
+    color: white;
+}
+
+@media (min-width: 922px) {
+    .header-r {
+        display: flex;
+    }
+    .header-l-i2 > a{
+        color: #26387d;
+    }
+    .menu {
+        display: none;
+    }
+    .ham-menu {
+        display: none;
+    }
+}
+.ham-menu {
+    display: block;
+}
+
+.close-menu {
+    display: none;
+}
+
+.ham-menu, .close-menu {
+    width: 20px;
+    height: 20px;
+}
+
+.menu {
+    padding: 10.95px;
+    background: transparent;
+    border: 0px;
+}
+
+.nav-contents {
+    list-style:none;
+    display:none;
+    flex-direction:column;
+}
+
+.nav-contents-i > a {
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.2;
+}
