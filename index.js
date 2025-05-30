@@ -1,16 +1,19 @@
 document.addEventListener("DOMContentLoaded", main);
 
 function main() {
-    document.querySelector(".menu").onclick = function() {
-        if(document.querySelector(".ham-menu").style.display === "block") {
-            document.querySelector(".ham-menu").style.display = "none";
-            document.querySelector(".close-menu").style.display = "block";
-            document.querySelector("ul").style.display = "flex";
+    const ham = document.querySelector("#ham-svg");
+    const cross = document.querySelector("#close-svg");
+    const nav = document.querySelector("#nav-list");
+    document.querySelector("#menu-button").onclick = function() {
+        if(ham.style.display === "block") {
+            ham.style.display = "none";
+            cross.style.display = "block";
+            nav.style.display = "flex";
         }
         else {
-            document.querySelector(".ham-menu").style.display = "block";
-            document.querySelector(".close-menu").style.display = "none";
-            document.querySelector("ul").style.display = "none";
+            ham.style.display = "block";
+            cross.style.display = "none";
+            nav.style.display = "none";
         }
     };
 }
