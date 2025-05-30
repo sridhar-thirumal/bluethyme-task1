@@ -97,7 +97,13 @@ a {
     .header-l-i2 > a{
         color: #26387d;
     }
+    .menu {
+        display: none;
+    }
     .ham-menu {
+        display: none;
+    }
+    .close-menu {
         display: none;
     }
 }
@@ -107,9 +113,19 @@ svg {
     height: 20px;
 }
 
-.ham-menu {
+.menu {
     padding: 10.95px;
     background: transparent;
     border: 0px;
 }
 
+li > a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.2;
+    width: 100%;
+}
+
+li > a:hover {
+    background-color:cyan;
+    color: #5072e9;
+}
