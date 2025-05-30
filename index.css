@@ -99,6 +99,16 @@
     .menu {
         display: none;
     }
+    .ham-menu {
+        display: none;
+    }
+}
+.ham-menu {
+    display: block;
+}
+
+.close-menu {
+    display: none;
 }
 
 .ham-menu, .close-menu {
