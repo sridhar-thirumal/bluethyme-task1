@@ -8,49 +8,93 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
-<body>
-    <header class="header-container">
-        <div class="header-l">
-            <div class="header-l-i1">
-                <a href="#"><img src="assets/logo.png"></a>
-            </div>
-            <div class="header-l-i2">
-                <a href="#">Bluethyme</a>
-            </div>
+<body class="home-page">
+    <div class="grid-container">
+        <div class="grid-header">
+            <header class="header-container">
+                <div class="header-l">
+                    <div class="header-l-i1">
+                        <a href="#"><img src="assets/logo.png"></a>
+                    </div>
+                    <div class="header-l-i2">
+                        <a href="#">Bluethyme</a>
+                    </div>
+                </div>
+                <button class="menu" id="menu-button">
+                    <svg class="ham-menu" id="ham-svg" viewBox="0 0 100 80" fill="#046bd2">
+                        <rect width="100" height="10"></rect>
+                        <rect y="30" width="100" height="10"></rect>
+                        <rect y="60" width="100" height="10"></rect>
+                    </svg>
+                    <svg class="close-menu" id="close-svg" viewBox="0 0 80 80">
+                        <line x1="10" y1="10" x2="70" y2="70" stroke="#046bd2" stroke-width="8"/>
+                        <line x1="70" y1="10" x2="10" y2="70" stroke="#046bd2" stroke-width="8"/>
+                    </svg>
+                </button>
+                <div class="header-r">
+                    <div class="header-r-l">
+                        <div class="header-r-l-i">
+                            <a href="#">Home</a>
+                            <a href="#">About us</a>
+                            <a href="#">Resources</a>
+                        </div>
+                    </div>
+                    <div class="header-r-r">
+                        <div class="header-r-r-i">
+                            <button class="sign-in">Sign In</button>
+                            <button class="sign-up">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <ul class="nav-contents" id="nav-list">
+                <li class="nav-contents-i"><a href="#">Home</a></li>
+                <li class="nav-contents-i"><a href="#">About Us</a></li>
+                <li class="nav-contents-i"><a href="#">Resources</a></li>
+                <li class="nav-contents-i"><a href="#">Sign In</a></li>
+                <li class="nav-contents-i"><a href="#">Sign Up</a></li>
+            </ul>
         </div>
-        <button class="menu" id="menu-button">
-            <svg class="ham-menu" id="ham-svg" viewBox="0 0 100 80" fill="#046bd2">
-                <rect width="100" height="10"></rect>
-                <rect y="30" width="100" height="10"></rect>
-                <rect y="60" width="100" height="10"></rect>
-            </svg>
-            <svg class="close-menu" id="close-svg" viewBox="0 0 80 80">
-                <line x1="10" y1="10" x2="70" y2="70" stroke="#046bd2" stroke-width="8"/>
-                <line x1="70" y1="10" x2="10" y2="70" stroke="#046bd2" stroke-width="8"/>
-            </svg>
-        </button>
-        <div class="header-r">
-            <div class="header-r-l">
-                <div class="header-r-l-i">
-                    <a href="#">Home</a>
-                    <a href="#">About us</a>
-                    <a href="#">Resources</a>
+        <div class="section1-l">
+            <div class="flex-container2">
+                <div class="flex-c2i1">
+                    <h1 class="heading-1">Welcome to Bluethyme</h1>
+                    <h1 class="heading-2">Your Intelligent Blog Companion</h1>
+                    <p class="section1-greytext">Effortlessly Navigate, Explore, and Engage
+                        with your Blog Content
+                    </p>
+                </div>
+                <div class="section1-bottom-container">
+                        <div class="s1-bottom-item1">
+                            <button class="section1-button">Request Demo</button>
+                        </div>
+                        <div class="s1-bottom-item2">
+                            <button class="section1-button">Try for Free</button>
+                        </div>
+                        <div class="s1-bottom-item3">
+                            <div class="check-container2">
+                                <div class="check-img">
+                                    <img src="assets/div.badge_.png" alt="check_badge">
+                                </div>
+                                <p class="section1-greytext-small">No credit card required</p>
+                            </div>
+                        </div>
+                        <div class="s1-bottom-item4">
+                            <div class="check-container2">
+                                <div class="check-img">
+                                    <img src="assets/div.badge_.png" alt="check_badge">
+                                </div>
+                                <p class="section1-greytext-small">Quick setup</p>
+                            </div>
+                        </div>
                 </div>
             </div>
-            <div class="header-r-r">
-                <div class="header-r-r-i">
-                    <button class="sign-in">Sign In</button>
-                    <button class="sign-up">Sign Up</button>
-                </div>
+        </div>
+        <div class="section1-r">
+            <div class="chatbot-img section1-r">
+                <img src="assets/bluethyme_chatbot.png" alt="bluethyme_chatbot">
             </div>
         </div>
-    </header>
-    <ul class="nav-contents" id="nav-list">
-        <li class="nav-contents-i"><a href="#">Home</a></li>
-        <li class="nav-contents-i"><a href="#">About Us</a></li>
-        <li class="nav-contents-i"><a href="#">Resources</a></li>
-        <li class="nav-contents-i"><a href="#">Sign In</a></li>
-        <li class="nav-contents-i"><a href="#">Sign Up</a></li>
-    </ul>
+    </div>
 </body>
 </html>
