@@ -393,6 +393,8 @@
     font-size: 26px;
     font-weight: 600;
     color: #fafafa;
+    display: flex;
+    justify-content: center;
 }
 
 .f1-i2 {
@@ -448,6 +450,7 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
+    justify-content: space-evenly;
 }
 
 .sec3-i1 {
