@@ -6,6 +6,16 @@ function main() {
     const nav = document.getElementById("nav-list");
 
     document.getElementById("menu-button").addEventListener("click", displayNavList);
+    const scrollButton = document.getElementById("upArrow");
+    window.addEventListener("scroll", function() {
+        if(window.scrollY > 220)
+            scrollButton.style.display = "flex";
+        else
+            scrollButton.style.display = "none";
+    })
+    scrollButton.addEventListener("click", function() {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    });
 }
 
 function displayNavList() {
